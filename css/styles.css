@@ -189,6 +189,21 @@ img {
     color: var(--primery-accent);
 }
 
+.contacts-icon {
+   
+    fill: var(--secondary-text-color);
+
+    margin-right: 10px;
+  
+
+}
+
+.contacts-list :hover .contacts-icon, 
+.contacts-list :focus .contacts-icon {
+    fill: var(--primery-accent);
+}
+
+
 
                             /*---Hero---*/
 
@@ -310,6 +325,22 @@ img {
     letter-spacing: var(--primery-letter-spacing);
 
 }
+
+
+.features-icon-list {
+    background-color: var(--team-bg-color);
+    
+    display: flex;
+    width: 270px;
+    height: 120px;
+    
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px
+}
+
+
 
                             
                             /*---Work---*/
@@ -498,11 +529,14 @@ img {
 
 }
 
-.clients-link:hover,
-.clients-link:focus 
+.clients-link:hover
 {
     border-color: var(--primery-accent);
 
+}
+
+.clients-link:focus {
+   outline-color: var(--primery-accent);
 }
 
 .clients-link:hover .clients-icon,
@@ -513,14 +547,7 @@ img {
 
 }
 
-
-
-
-
-
-
-
-                            /*---Footer---*/
+                        /*---Footer---*/
 
 
 
