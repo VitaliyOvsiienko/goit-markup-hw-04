@@ -70,6 +70,7 @@ img {
     
     margin-left: 50px;
 
+
 }
 
 
@@ -90,8 +91,6 @@ img {
 }
 
 .header {
-    
-    background-color: var(--primery-bg-color);
     
     border-bottom: 1px solid #ECECEC;
 
@@ -127,6 +126,7 @@ img {
  
     display: flex;
     gap: 50px;
+
    
   
 }
@@ -134,6 +134,7 @@ img {
 .link{
     padding-top: 32px;
     padding-bottom: 32px;
+   
 }
 
 
@@ -166,16 +167,20 @@ img {
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: var(--secondary-letter-spacing);
-  
+    
     display: flex;
     margin-left: auto;
     gap: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
 }
 
-   
+.connect {
+    display: flex;
+    align-items: center;
+
+}
+
+
 .contacts-list .connect{
 
     color: var(--secondary-text-color);
@@ -209,7 +214,16 @@ img {
 
 .hero {
    
-    background-color: var(--secondary-bg-color);
+    max-width: 1600px;
+    
+    background: #C4C4C4;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)), 
+        url(../images/bcg-img.jpg);
+    
+    background-position: center;
+    background-size: cover;
 
     padding-top: 200px;
     padding-bottom: 210px;
@@ -376,7 +390,6 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
 
-
 }
 
 .team-card {
@@ -384,11 +397,6 @@ img {
 
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-
-
-    
-
- 
 }
 
 .team-img{
@@ -551,6 +559,7 @@ img {
 
 
 
+
 .footer {
         
     background-color: var(--secondary-bg-color);
@@ -576,9 +585,6 @@ img {
     
     margin-bottom: 0;
 }
-
-
-
 
 
 
@@ -615,8 +621,6 @@ img {
 }
 
 
-
-
 .contacts-footer .connection {
    
     color: rgba(255, 255, 255, 0.6);
@@ -637,8 +641,68 @@ img {
 } 
 
 
+                            /*---Contacts-Social---*/
 
-                            /*---Portfolio---*/
+.footer-container {
+    display: flex;
+    align-items: baseline;
+   
+}
+
+.contacts-soc-title {
+
+    color: var(--primery-bg-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: var(--primery-letter-spacing);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-left: 70px;
+
+}
+
+.contacts-soc-list {
+    display: flex;
+    gap: 10px;
+
+    margin-left: 70px;
+
+}
+
+.contacts-soc-item {
+
+    width: 44px;
+    height: 44px;
+
+}
+
+.contacts-soc-link {
+    background-color: rgba(255, 255, 255, 0.1);;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+    width: 100%;
+    height: 100%;
+
+}
+
+.contacts-soc-icon {
+    fill: var(--primery-bg-color);
+}
+
+.contacts-soc-link:hover,
+.contacts-soc-link:focus {
+    background-color:var(--primery-accent);
+}
+
+
+
+
+                                /*---Portfolio---*/
 
 .portfolio-container {
 
@@ -670,9 +734,6 @@ img {
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22px;
-
-    
-
 
 }
 
@@ -706,6 +767,11 @@ img {
      
 }
 
+.info-card:hover {
+
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16)
+}
+
 .info-img {
     display: block;
 
@@ -714,12 +780,6 @@ img {
 .info-link {
 
     text-decoration: none;
-
-  
-    
- 
-
-   
 
 }
 
